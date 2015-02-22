@@ -3,7 +3,7 @@ package express;
 import js.Error;
 
 @:jsRequire("express")
-extern class Express extends Routes {
+extern class Express extends Route {
   @:selfCall function new() : Void;
 
   var locals(default, null) : {};
@@ -23,7 +23,7 @@ extern class Express extends Routes {
   function param(?name : String, callback : Request -> Response -> Next -> String -> Void) : Express;
   function path() : String;
   function render(view : String, ?locals : {}, callback : Error -> String -> Void) : Void;
-  function route(path : String) : Routes;
+  function route(path : String) : Route;
   function search(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Void;
   function set(name : String, value : Dynamic) : Express;
   @:overload(function(?path : String, app : Express) : Express {})

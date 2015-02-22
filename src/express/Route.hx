@@ -1,6 +1,6 @@
 package express;
 
-extern class Routes {
+extern class Route {
   function all(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Void;
   function checkout(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Void;
   function connect(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Void;

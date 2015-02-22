@@ -1,7 +1,7 @@
 package express;
 
 @:jsRequire("express", "Router")
-extern class Router extends Routes {
+extern class Router extends Route {
   @:selfCall function new(?options : RouterOptions) : Void;
   function param(?name : String, callback : Request -> Response -> Next -> String -> Void) : Void;
   function path() : String;
