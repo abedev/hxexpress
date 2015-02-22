@@ -1,0 +1,14 @@
+{
+  "name": "express",
+  "url": "https://github.com/abedev/express",
+  "license": "MIT",
+  "classPath": "src",
+  "tags": ["nodejs", "webserver"],
+  "description": "Express types for Haxe",
+  "releasenote": "First release.",
+  "version": "0.0.1",
+  "contributors": ["fponticelli"],
+  "dependencies" : {
+    "hxnodejs" : ""
+  }
+}
