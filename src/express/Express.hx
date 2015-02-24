@@ -29,6 +29,9 @@ extern class Express extends Route {
   @:overload(function(?path : String, app : Express) : Express {})
   @:overload(function(?path : String, router : Router) : Express {})
   function use(?path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Express;
+
+  inline static function serveStatic(root : String, ?options : StaticOptions) : Middleware
+    return untyped Express["static"](root, options);
 }
 
 @:enum
