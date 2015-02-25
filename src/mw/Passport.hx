@@ -6,7 +6,7 @@ import express.Middleware;
 extern class Passport {
   @:selfCall function new() : Void;
 
-  public function use(?name : String, strategy : Dynamic) : Passport;
+  public function use(?name : String, strategy : Strategy<Dynamic>) : Passport;
   public function unuse(name : String) : Passport;
   // only for use outside of an Express context
   // public function framework(fw : Dynamic) : Passport
