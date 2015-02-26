@@ -1,7 +1,6 @@
 package mw;
 
 import express.Middleware;
-import mw.jwt.*;
 import mw.Unless;
 
 @:jsRequire("express-jwt")
