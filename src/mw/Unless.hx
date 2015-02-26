@@ -1,5 +1,6 @@
 package mw;
 
+import express.Request;
 import express.Middleware;
 import haxe.EitherType;
 import mw.jwt.*;
