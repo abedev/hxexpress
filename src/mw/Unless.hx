@@ -7,7 +7,7 @@ import mw.jwt.*;
 
 @:jsRequire("express-unless")
 extern class Unless {
-  @:selfCall static function unless(?options : UnlessOptions) : UnlessMiddleware;
+  @:selfCall static function create(?options : UnlessOptions) : UnlessMiddleware;
 }
 
 typedef UnlessOptions = {

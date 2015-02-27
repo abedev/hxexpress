@@ -1,9 +1,19 @@
 package express;
 
-typedef FMiddlware = Response -> Request -> Void;
-typedef FMiddlwareNext = Response -> Request -> Next -> Void;
+import js.Error;
+
+typedef FMiddleware = Request -> Response -> Void;
+typedef FMiddlewareNext = Request -> Response -> Next -> Void;
 
 abstract Middleware(Dynamic)
-  from FMiddlware to FMiddlware
-  from FMiddlwareNext to FMiddlwareNext
+  from FMiddleware to FMiddleware
+  from FMiddlewareNext to FMiddlewareNext
+{ }
+
+typedef FErrorMiddleware = Error -> Request -> Response -> Void;
+typedef FErrorMiddlewareNext = Error -> Request -> Response -> Next -> Void;
+
+abstract ErrorMiddleware(Dynamic)
+  from FErrorMiddleware to FErrorMiddleware
+  from FErrorMiddlewareNext to FErrorMiddlewareNext
 { }

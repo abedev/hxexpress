@@ -1,6 +1,7 @@
 package express;
 
 import js.Error;
+import express.Middleware;
 
 @:jsRequire("express")
 extern class Express extends Route {
@@ -26,9 +27,13 @@ extern class Express extends Route {
   function route(path : String) : Route;
   function search(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Void;
   function set(name : String, value : Dynamic) : Express;
-  @:overload(function(?path : String, app : Express) : Express {})
-  @:overload(function(?path : String, router : Router) : Express {})
-  function use(?path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Express;
+  @:overload(function(callback : Middleware) : Express {})
+  @:overload(function(callback : ErrorMiddleware) : Express {})
+  @:overload(function(app : Express) : Express {})
+  @:overload(function(path : String, app : Express) : Express {})
+  @:overload(function(router : Router) : Express {})
+  @:overload(function(path : String, router : Router) : Express {})
+  function use(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Express;
 
   inline static function serveStatic(root : String, ?options : StaticOptions) : Middleware
     return untyped Express["static"](root, options);
