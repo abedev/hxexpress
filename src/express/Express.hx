@@ -29,8 +29,10 @@ extern class Express extends Route {
   function set(name : String, value : Dynamic) : Express;
   @:overload(function(callback : Middleware) : Express {})
   @:overload(function(callback : ErrorMiddleware) : Express {})
-  @:overload(function(?path : String, app : Express) : Express {})
-  @:overload(function(?path : String, router : Router) : Express {})
+  @:overload(function(app : Express) : Express {})
+  @:overload(function(path : String, app : Express) : Express {})
+  @:overload(function(router : Router) : Express {})
+  @:overload(function(path : String, router : Router) : Express {})
   function use(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Express;
 
   inline static function serveStatic(root : String, ?options : StaticOptions) : Middleware
