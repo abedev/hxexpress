@@ -6,7 +6,7 @@ import mw.Unless;
 
 @:jsRequire("express-jwt")
 extern class Jwt {
-  @:selfCall static function protect(?options : JwtOptions) : UnlessMiddleware;
+  @:selfCall static function create(?options : JwtOptions) : UnlessMiddleware;
 }
 
 typedef JwtOptions = {

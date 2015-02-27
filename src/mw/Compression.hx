@@ -5,5 +5,5 @@ import mw.compression.*;
 
 @:jsRequire("compression")
 extern class Compression {
-  @:selfCall static function compression(?options : CompressionOptions) : Middleware;
+  @:selfCall static function create(?options : CompressionOptions) : Middleware;
 }
