@@ -7,7 +7,7 @@ typedef StaticOptions = {
   ?dotfiles : DotFile,
   ?etag : Bool,
   ?extensions : EitherType<Bool, Array<String>>,
-  ?index : EitherType<Bool, EitherType<String, Array<String>>,
+  ?index : EitherType<Bool, EitherType<String, Array<String>>>,
   ?lastModified : Bool,
   ?maxAge : EitherType<String, Float>,
   ?redirect : Bool,
