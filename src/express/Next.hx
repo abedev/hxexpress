@@ -11,11 +11,12 @@ abstract Next(Dynamic)
   from FNextRoute to FNextRoute
   from FNextError to FNextError
 {
-  public inline function call() {
+  public inline function call()
     untyped this();
-  }
 
-  public inline function error(err : js.Error) {
+  public inline function error(err : js.Error)
     untyped this(err);
-  }
+
+  public inline function route()
+    untyped this("route");
 }
