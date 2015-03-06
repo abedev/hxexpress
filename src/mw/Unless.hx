@@ -3,6 +3,7 @@ package mw;
 import express.Request;
 import express.Middleware;
 import haxe.EitherType;
+import js.RegExp;
 import mw.jwt.*;
 
 @:jsRequire("express-unless")
@@ -12,7 +13,7 @@ extern class Unless {
 
 typedef UnlessOptions = {
   ?method : EitherType<String, Array<String>>,
-  ?path : EitherType<String, Array<String>>, // TODO should also support REGEX
+  ?path : EitherType<String, EitherType<RegExp,Array<String>>>,
   ?ext : EitherType<String, Array<String>>,
   ?custom : Request -> Bool,
   ?useOriginalUrl : Bool

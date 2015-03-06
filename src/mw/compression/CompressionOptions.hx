@@ -2,6 +2,7 @@ package mw.compression;
 
 import express.Request;
 import express.Response;
+import haxe.EitherType;
 
 typedef CompressionOptions = {
   ?chunkSize : Int,
@@ -9,6 +10,6 @@ typedef CompressionOptions = {
   ?level : Int,
   ?memLevel : Int,
   ?strategy : String,
-  ?threshold : Dynamic, // TODO number bytes, bytes as string, `false`
+  ?threshold : EitherType<Int, EitherType<String, Bool>>,
   ?windowBits : Int
 }
