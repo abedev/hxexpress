@@ -1,7 +1,5 @@
 package express;
 
-import js.Error;
-
 typedef FNext = Void -> Void;
 typedef FNextRoute = String -> Void;
 typedef FNextError = Error -> Void;

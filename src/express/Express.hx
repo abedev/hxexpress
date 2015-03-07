@@ -1,6 +1,5 @@
 package express;
 
-import js.Error;
 import express.Middleware;
 
 @:jsRequire("express")

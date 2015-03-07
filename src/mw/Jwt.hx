@@ -1,17 +1,9 @@
 package mw;
 
-import express.Request;
-import express.Middleware;
 import mw.Unless;
+import mw.jwt.Options;
 
 @:jsRequire("express-jwt")
 extern class Jwt {
-  @:selfCall static function create(?options : JwtOptions) : UnlessMiddleware;
-}
-
-typedef JwtOptions = {
-  ?userProperty : String,
-  ?credentialsRequired : Bool,
-  ?getToken : Request -> String,
-  ?secret : String
+  @:selfCall static function create(?options : Options) : UnlessMiddleware;
 }
