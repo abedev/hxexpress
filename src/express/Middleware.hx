@@ -1,7 +1,5 @@
 package express;
 
-import js.Error;
-
 typedef FMiddleware = Request -> Response -> Void;
 typedef FMiddlewareNext = Request -> Response -> Next -> Void;
 

@@ -1,7 +1,5 @@
 package express;
 
-import js.Error;
-
 extern class Response extends js.node.http.ServerResponse {
   var app : Express;
   var headersSend : Bool;
