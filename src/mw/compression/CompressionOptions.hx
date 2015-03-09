@@ -2,7 +2,7 @@ package mw.compression;
 
 import express.Request;
 import express.Response;
-import haxe.EitherType;
+import haxe.extern.EitherType;
 
 typedef CompressionOptions = {
   ?chunkSize : Int,

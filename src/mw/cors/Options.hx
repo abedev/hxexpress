@@ -1,7 +1,7 @@
 package mw.cors;
 
 import express.Request;
-import haxe.EitherType;
+import haxe.extern.EitherType;
 import js.Error;
 
 typedef Options = {

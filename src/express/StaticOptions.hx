@@ -1,6 +1,6 @@
 package express;
 
-import haxe.EitherType;
+import haxe.extern.EitherType;
 import js.node.fs.Stats;
 
 typedef StaticOptions = {

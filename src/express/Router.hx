@@ -1,6 +1,7 @@
 package express;
 
 import express.Middleware;
+import haxe.extern.Rest;
 
 @:jsRequire("express", "Router")
 extern class Router extends Route {
@@ -12,7 +13,7 @@ extern class Router extends Route {
   @:overload(function(callback : ErrorMiddleware) : Router {})
   @:overload(function(router : Router) : Router {})
   @:overload(function(path : String, router : Router) : Router {})
-  function use(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Router;
+  function use(path : String, callback : Middleware, callbacks : Rest<Middleware>) : Router;
 }
 
 typedef RouterOptions = {
