@@ -2,7 +2,7 @@ package mw;
 
 import express.Request;
 import express.Middleware;
-import haxe.EitherType;
+import haxe.extern.EitherType;
 import js.RegExp;
 import mw.jwt.*;
 

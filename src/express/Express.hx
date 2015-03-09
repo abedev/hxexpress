@@ -1,6 +1,7 @@
 package express;
 
 import express.Middleware;
+import haxe.extern.Rest;
 
 @:jsRequire("express")
 extern class Express extends Route {
@@ -17,14 +18,14 @@ extern class Express extends Route {
   function enabled(name : String) : Bool;
   function engine(ext : String, callback : String -> {} -> (Error -> String -> Void) -> Void) : Express;
   @:overload(function(name : String) : String {})
-  override function get(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Void;
+  override function get(path : String, callback : Middleware, callbacks : Rest<Middleware>) : Void;
   // TODO return type is wrong
   function listen(port : Int, ?hostname : String, ?backlog : Int, ?callback : Void -> Void) : Void;
   function param(?name : String, callback : Request -> Response -> Next -> String -> Void) : Express;
   function path() : String;
   function render(view : String, ?locals : {}, callback : Error -> String -> Void) : Void;
   function route(path : String) : Route;
-  function search(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Void;
+  function search(path : String, callback : Middleware, callbacks : Rest<Middleware>) : Void;
   function set(name : String, value : Dynamic) : Express;
   @:overload(function(callback : Middleware) : Express {})
   @:overload(function(callback : ErrorMiddleware) : Express {})
@@ -32,7 +33,7 @@ extern class Express extends Route {
   @:overload(function(path : String, app : Express) : Express {})
   @:overload(function(router : Router) : Express {})
   @:overload(function(path : String, router : Router) : Express {})
-  function use(path : String, callback : Middleware, callbacks : haxe.Rest<Middleware>) : Express;
+  function use(path : String, callback : Middleware, callbacks : Rest<Middleware>) : Express;
 
   inline static function serveStatic(root : String, ?options : StaticOptions) : Middleware
     return untyped Express["static"](root, options);

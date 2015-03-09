@@ -1,5 +1,7 @@
 package express;
 
+import haxe.extern.Rest;
+
 extern class Request extends js.node.http.IncomingMessage {
   var app : Express;
   var baseUrl : String;
@@ -28,9 +30,9 @@ extern class Request extends js.node.http.IncomingMessage {
   @:overload(function(types : Array<String>) : String {})
   function accepts(type : String) : String;
 
-  function acceptsCharsets(charset : String, charsets : haxe.Rest<String>) : String;
-  function acceptsEncodings(encoding : String, encodings : haxe.Rest<String>) : String;
-  function acceptsLanguages(languageg : String, languages : haxe.Rest<String>) : String;
+  function acceptsCharsets(charset : String, charsets : Rest<String>) : String;
+  function acceptsEncodings(encoding : String, encodings : Rest<String>) : String;
+  function acceptsLanguages(languageg : String, languages : Rest<String>) : String;
 
   function get(field : String) : String;
   function is(type : String) : Bool;
