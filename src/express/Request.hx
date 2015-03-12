@@ -1,5 +1,6 @@
 package express;
 
+import haxe.extern.EitherType;
 import haxe.extern.Rest;
 
 extern class Request extends js.node.http.IncomingMessage {
@@ -35,6 +36,7 @@ extern class Request extends js.node.http.IncomingMessage {
   function acceptsLanguages(languageg : String, languages : Rest<String>) : String;
 
   function get(field : String) : String;
-  function is(type : String) : Bool;
+  @:overload(function(types : Array<String>) : EitherType<String, Bool> {})
+  function is(type : String) : EitherType<String, Bool>;
   function param(name : String, ?defaultValue : String) : String;
 }
