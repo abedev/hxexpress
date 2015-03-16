@@ -6,9 +6,7 @@
   "tags": ["nodejs", "webserver"],
   "description": "Express types for Haxe",
   "releasenote": "First release.",
-  "version": "0.0.1",
-  "contributors": ["fponticelli"],
-  "dependencies" : {
-    "hxnodejs" : ""
-  }
+  "version": "0.2.0",
+  "contributors": ["fponticelli", "mlms13"],
+  "dependencies" : {}
 }
