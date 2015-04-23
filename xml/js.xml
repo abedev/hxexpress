@@ -5930,13 +5930,13 @@
 		<meta><m n=":jsRequire"><e>"body-parser"</e></m></meta>
 	</class>
 	<class path="mw.Busboy" params="" file="src/mw/Busboy.hx" extern="1">
-		<new public="1" set="method">
-			<f a="options">
+		<create public="1" set="method" static="1">
+			<f a="?options">
 				<t path="mw.busboy.Options"/>
-				<x path="Void"/>
+				<x path="express.Middleware"/>
 			</f>
 			<meta><m n=":selfCall"/></meta>
-		</new>
+		</create>
 		<meta><m n=":jsRequire"><e>"conntect-busboy"</e></m></meta>
 	</class>
 	<class path="mw.Compression" params="" file="src/mw/Compression.hx" extern="1">
