@@ -1,6 +1,7 @@
 package mw;
 
 import express.Middleware;
+import mw.passport.*;
 
 @:jsRequire("passport")
 extern class Passport {

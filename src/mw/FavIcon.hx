@@ -1,6 +1,6 @@
 package mw;
 
-import haxe.EitherType;
+import haxe.extern.EitherType;
 import express.*;
 
 @:jsRequire("favicon")

@@ -1,0 +1,22 @@
+-cp src
+--no-output
+-D doc-gen
+-D display
+-D dox
+-dce no
+-lib hxnodejs
+-xml xml/js.xml
+-js _
+mw.BodyParser
+mw.Busboy
+mw.Compression
+mw.CookieParser
+mw.CookieSession
+mw.Cors
+mw.Favicon
+mw.Jwt
+mw.Morgan
+mw.Passport
+mw.Slash
+mw.Uncapitalize
+mw.Unless
