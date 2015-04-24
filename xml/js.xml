@@ -5937,7 +5937,7 @@
 			</f>
 			<meta><m n=":selfCall"/></meta>
 		</create>
-		<meta><m n=":jsRequire"><e>"conntect-busboy"</e></m></meta>
+		<meta><m n=":jsRequire"><e>"connect-busboy"</e></m></meta>
 	</class>
 	<class path="mw.Compression" params="" file="src/mw/Compression.hx" extern="1">
 		<create public="1" set="method" static="1">
