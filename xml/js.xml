@@ -6006,6 +6006,47 @@
 		<meta><m n=":jsRequire"><e>"cors"</e></m></meta>
 	</class>
 	<class path="mw.ExpressBrute" params="" file="src/mw/ExpressBrute.hx" extern="1">
+		<FailTooManyRequests public="1" set="method" static="1"><f a="req:res:next:nextValidRequestDate">
+	<c path="express.Request"/>
+	<c path="express.Response"/>
+	<x path="express.Next"/>
+	<c path="Date"/>
+	<x path="Void"/>
+</f></FailTooManyRequests>
+		<FailForbidden public="1" set="method" static="1"><f a="req:res:next:nextValidRequestDate">
+	<c path="express.Request"/>
+	<c path="express.Response"/>
+	<x path="express.Next"/>
+	<c path="Date"/>
+	<x path="Void"/>
+</f></FailForbidden>
+		<FailMark public="1" set="method" static="1"><f a="req:res:next:nextValidRequestDate">
+	<c path="express.Request"/>
+	<c path="express.Response"/>
+	<x path="express.Next"/>
+	<c path="Date"/>
+	<x path="Void"/>
+</f></FailMark>
+		<prevent public="1" set="method"><f a="req:res:next">
+	<c path="express.Request"/>
+	<c path="express.Response"/>
+	<x path="express.Next"/>
+	<x path="Void"/>
+</f></prevent>
+		<getMiddleware public="1" set="method"><f a="options">
+	<t path="mw.expressbrute.MiddlewareOptions"/>
+	<x path="express.Middleware"/>
+</f></getMiddleware>
+		<reset public="1" set="method"><f a="ip:key:next">
+	<c path="String"/>
+	<c path="String"/>
+	<x path="express.Next"/>
+	<x path="Void"/>
+</f></reset>
+		<getIPFromRequest public="1" set="method"><f a="req">
+	<c path="express.Request"/>
+	<c path="String"/>
+</f></getIPFromRequest>
 		<new public="1" set="method"><f a="store:?options">
 	<c path="mw.expressbrute.Store"/>
 	<t path="mw.expressbrute.Options"/>
@@ -6481,6 +6522,27 @@
 	</f>
 	<x path="Void"/>
 </f></typedef>
+	<typedef path="mw.expressbrute.MiddlewareOptions" params="" file="src/mw/expressbrute/MiddlewareOptions.hx"><a>
+	<key><x path="haxe.extern.EitherType">
+	<c path="String"/>
+	<f a="::">
+		<c path="express.Request"/>
+		<c path="express.Response"/>
+		<x path="express.Next"/>
+		<x path="Void"/>
+	</f>
+</x></key>
+	<failCallback>
+		<t path="Null"><f a=":::">
+	<c path="express.Request"/>
+	<c path="express.Response"/>
+	<x path="express.Next"/>
+	<c path="Date"/>
+	<x path="Void"/>
+</f></t>
+		<meta><m n=":optional"/></meta>
+	</failCallback>
+</a></typedef>
 	<typedef path="mw.expressbrute.Options" params="" file="src/mw/expressbrute/Options.hx"><a>
 	<refreshTimeoutOnRequest>
 		<t path="Null"><x path="Bool"/></t>
