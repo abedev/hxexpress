@@ -1,4 +1,4 @@
 package mw.expressbrute;
 
-typedef Store = {
+interface Store {
 }

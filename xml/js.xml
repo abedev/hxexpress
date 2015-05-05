@@ -6005,6 +6005,14 @@
 		</create>
 		<meta><m n=":jsRequire"><e>"cors"</e></m></meta>
 	</class>
+	<class path="mw.ExpressBrute" params="" file="src/mw/ExpressBrute.hx" extern="1">
+		<new public="1" set="method"><f a="store:?options">
+	<c path="mw.expressbrute.Store"/>
+	<t path="mw.expressbrute.Options"/>
+	<x path="Void"/>
+</f></new>
+		<meta><m n=":jsRequire"><e>"express-brute"</e></m></meta>
+	</class>
 	<class path="mw.FavIcon" params="" file="src/mw/Favicon.hx" module="mw.Favicon" extern="1">
 		<create public="1" set="method" static="1">
 			<f a="path:?options">
@@ -6473,6 +6481,71 @@
 	</f>
 	<x path="Void"/>
 </f></typedef>
+	<typedef path="mw.expressbrute.Options" params="" file="src/mw/expressbrute/Options.hx"><a>
+	<refreshTimeoutOnRequest>
+		<t path="Null"><x path="Bool"/></t>
+		<meta><m n=":optional"/></meta>
+	</refreshTimeoutOnRequest>
+	<proxyDepth>
+		<t path="Null"><x path="Int"/></t>
+		<meta><m n=":optional"/></meta>
+	</proxyDepth>
+	<minWait>
+		<t path="Null"><x path="Float"/></t>
+		<meta><m n=":optional"/></meta>
+	</minWait>
+	<maxWait>
+		<t path="Null"><x path="Float"/></t>
+		<meta><m n=":optional"/></meta>
+	</maxWait>
+	<lifetime>
+		<t path="Null"><x path="Float"/></t>
+		<meta><m n=":optional"/></meta>
+	</lifetime>
+	<handleStoreError>
+		<t path="Null"><x path="haxe.extern.EitherType">
+	<f a="::">
+		<a>
+			<parent><c path="js.Error"/></parent>
+			<message><c path="String"/></message>
+		</a>
+		<c path="String"/>
+		<c path="String"/>
+		<x path="Void"/>
+	</f>
+	<f a=":::">
+		<a>
+			<parent><c path="js.Error"/></parent>
+			<message><c path="String"/></message>
+		</a>
+		<c path="express.Request"/>
+		<c path="express.Response"/>
+		<x path="express.Next"/>
+		<x path="Void"/>
+	</f>
+</x></t>
+		<meta><m n=":optional"/></meta>
+	</handleStoreError>
+	<freeRetries>
+		<t path="Null"><x path="Int"/></t>
+		<meta><m n=":optional"/></meta>
+	</freeRetries>
+	<failCallback>
+		<t path="Null"><f a=":::">
+	<c path="express.Request"/>
+	<c path="express.Response"/>
+	<x path="express.Next"/>
+	<c path="Date"/>
+	<x path="Void"/>
+</f></t>
+		<meta><m n=":optional"/></meta>
+	</failCallback>
+	<attachResetToRequest>
+		<t path="Null"><x path="Bool"/></t>
+		<meta><m n=":optional"/></meta>
+	</attachResetToRequest>
+</a></typedef>
+	<class path="mw.expressbrute.Store" params="" file="src/mw/expressbrute/Store.hx" interface="1"/>
 	<typedef path="mw.jwt.Options" params="" file="src/mw/jwt/Options.hx"><a>
 	<userProperty>
 		<t path="Null"><c path="String"/></t>

@@ -13,6 +13,7 @@ mw.Compression
 mw.CookieParser
 mw.CookieSession
 mw.Cors
+mw.ExpressBrute
 mw.Favicon
 mw.Jwt
 mw.Morgan
