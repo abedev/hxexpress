@@ -25,7 +25,8 @@ extern class Response extends js.node.http.ServerResponse {
   function jsonp(body : {}) : Response;
   function links(links : Dynamic<String>) : Void;
   function location(path : String) : Response;
-  function redirect(?status : Int, path : String) : Void;
+  @:overload(function(status : Int, path : String) : Void {})
+  function redirect(path : String) : Void;
   function render(view : String, ?locals : {}, ?callback : Error -> String -> Void) : Void;
   @:overload(function(body : js.node.Buffer) : Void {})
   @:overload(function(body : String) : Void {})

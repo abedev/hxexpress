@@ -2959,11 +2959,17 @@
 	<c path="String"/>
 	<c path="express.Response"/>
 </f></location>
-		<redirect public="1" set="method"><f a="?status:path">
+		<redirect public="1" set="method">
+			<f a="path">
+				<c path="String"/>
+				<x path="Void"/>
+			</f>
+			<overloads><redirect public="1" set="method"><f a="status:path">
 	<x path="Int"/>
 	<c path="String"/>
 	<x path="Void"/>
-</f></redirect>
+</f></redirect></overloads>
+		</redirect>
 		<render public="1" set="method"><f a="view:?locals:?callback">
 	<c path="String"/>
 	<a/>
