@@ -14,6 +14,7 @@ mw.CookieParser
 mw.CookieSession
 mw.Cors
 mw.ExpressBrute
+mw.ExpressForceSSL
 mw.Favicon
 mw.Jwt
 mw.Morgan

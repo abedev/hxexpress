@@ -14,7 +14,7 @@ extern class Request extends js.node.http.IncomingMessage {
   var hostname : String;
   var ip : String;
   var ips : Array<String>;
-  var originUrl : String;
+  var originalUrl : String;
   var params : {};
   var path : String;
   var protocol : String; // TODO needs abstract

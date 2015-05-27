@@ -1850,10 +1850,10 @@
 		<to><icast><c path="String"/></icast></to>
 		<meta><m n=":enum"/></meta>
 		<impl><class path="express._Express.ExpressEvent_Impl_" params="" file="src/express/Express.hx" private="1" module="express.Express" extern="1">
-	<mount public="1" get="inline" set="null" expr="&apos;???&apos;" line="44" static="1">
+	<mount public="1" get="inline" set="null" expr="cast &quot;mount&quot;" line="44" static="1">
 		<x path="express.ExpressEvent"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "mount"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -1862,10 +1862,10 @@
 </class></impl>
 	</abstract>
 	<class path="express._Express.ExpressEvent_Impl_" params="" file="src/express/Express.hx" private="1" module="express.Express" extern="1">
-		<mount public="1" get="inline" set="null" expr="&apos;???&apos;" line="44" static="1">
+		<mount public="1" get="inline" set="null" expr="cast &quot;mount&quot;" line="44" static="1">
 			<x path="express.ExpressEvent"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "mount"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -2456,7 +2456,7 @@
 		<hostname public="1"><c path="String"/></hostname>
 		<ip public="1"><c path="String"/></ip>
 		<ips public="1"><c path="Array"><c path="String"/></c></ips>
-		<originUrl public="1"><c path="String"/></originUrl>
+		<originalUrl public="1"><c path="String"/></originalUrl>
 		<params public="1"><a/></params>
 		<path public="1"><c path="String"/></path>
 		<protocol public="1"><c path="String"/></protocol>
@@ -3212,26 +3212,26 @@
 		<to><icast><c path="String"/></icast></to>
 		<meta><m n=":enum"/></meta>
 		<impl><class path="express._StaticOptions.DotFile_Impl_" params="" file="src/express/StaticOptions.hx" private="1" module="express.StaticOptions" extern="1">
-	<allow public="1" get="inline" set="null" expr="&apos;???&apos;" line="19" static="1">
+	<allow public="1" get="inline" set="null" expr="cast &quot;allow&quot;" line="19" static="1">
 		<x path="express.DotFile"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "allow"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 	</allow>
-	<deny public="1" get="inline" set="null" expr="&apos;???&apos;" line="20" static="1">
+	<deny public="1" get="inline" set="null" expr="cast &quot;deny&quot;" line="20" static="1">
 		<x path="express.DotFile"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "deny"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 	</deny>
-	<ignore public="1" get="inline" set="null" expr="&apos;???&apos;" line="21" static="1">
+	<ignore public="1" get="inline" set="null" expr="cast &quot;ignore&quot;" line="21" static="1">
 		<x path="express.DotFile"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "ignore"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -3240,26 +3240,26 @@
 </class></impl>
 	</abstract>
 	<class path="express._StaticOptions.DotFile_Impl_" params="" file="src/express/StaticOptions.hx" private="1" module="express.StaticOptions" extern="1">
-		<allow public="1" get="inline" set="null" expr="&apos;???&apos;" line="19" static="1">
+		<allow public="1" get="inline" set="null" expr="cast &quot;allow&quot;" line="19" static="1">
 			<x path="express.DotFile"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "allow"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 		</allow>
-		<deny public="1" get="inline" set="null" expr="&apos;???&apos;" line="20" static="1">
+		<deny public="1" get="inline" set="null" expr="cast &quot;deny&quot;" line="20" static="1">
 			<x path="express.DotFile"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "deny"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 		</deny>
-		<ignore public="1" get="inline" set="null" expr="&apos;???&apos;" line="21" static="1">
+		<ignore public="1" get="inline" set="null" expr="cast &quot;ignore&quot;" line="21" static="1">
 			<x path="express.DotFile"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "ignore"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -3790,7 +3790,7 @@
 			</f>
 			<meta><m n=":ifFeature"><e>"typed_cast"</e></m></meta>
 		</__cast>
-		<__toStr expr="&apos;???&apos;" line="229" static="1">
+		<__toStr expr="untyped __js__(&quot;{}.toString&quot;)" line="229" static="1">
 			<a><call set="null"><f a="">
 	<d/>
 	<a><slice set="null"><f a=":">
@@ -3801,7 +3801,7 @@
 </f></call></a>
 			<meta>
 				<m n=":has_untyped"/>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>untyped __js__("{}.toString")</e></m>
 			</meta>
 		</__toStr>
 		<__nativeClassName set="method" line="231" static="1">
@@ -4617,14 +4617,14 @@
 		<haxe_doc>Enumeration of events emitted by all `EventEmitter` instances.</haxe_doc>
 		<meta><m n=":enum"/></meta>
 		<impl><class path="js.node.events._EventEmitter.EventEmitterEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/events/EventEmitter.hx" private="1" module="js.node.events.EventEmitter" extern="1">
-	<NewListener public="1" get="inline" set="null" expr="&apos;???&apos;" line="39" static="1">
+	<NewListener public="1" get="inline" set="null" expr="cast &quot;newListener&quot;" line="39" static="1">
 		<x path="js.node.events.EventEmitterEvent"><f a=":">
 	<c path="String"/>
 	<x path="haxe.Function"/>
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "newListener"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -4636,14 +4636,14 @@
 
 		It is unspecified if listener is in the list returned by emitter.listeners(event).</haxe_doc>
 	</NewListener>
-	<RemoveListener public="1" get="inline" set="null" expr="&apos;???&apos;" line="50" static="1">
+	<RemoveListener public="1" get="inline" set="null" expr="cast &quot;removeListener&quot;" line="50" static="1">
 		<x path="js.node.events.EventEmitterEvent"><f a=":">
 	<c path="String"/>
 	<x path="haxe.Function"/>
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "removeListener"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -4659,14 +4659,14 @@
 </class></impl>
 	</abstract>
 	<class path="js.node.events._EventEmitter.EventEmitterEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/events/EventEmitter.hx" private="1" module="js.node.events.EventEmitter" extern="1">
-		<NewListener public="1" get="inline" set="null" expr="&apos;???&apos;" line="39" static="1">
+		<NewListener public="1" get="inline" set="null" expr="cast &quot;newListener&quot;" line="39" static="1">
 			<x path="js.node.events.EventEmitterEvent"><f a=":">
 	<c path="String"/>
 	<x path="haxe.Function"/>
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "newListener"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -4678,14 +4678,14 @@
 
 		It is unspecified if listener is in the list returned by emitter.listeners(event).</haxe_doc>
 		</NewListener>
-		<RemoveListener public="1" get="inline" set="null" expr="&apos;???&apos;" line="50" static="1">
+		<RemoveListener public="1" get="inline" set="null" expr="cast &quot;removeListener&quot;" line="50" static="1">
 			<x path="js.node.events.EventEmitterEvent"><f a=":">
 	<c path="String"/>
 	<x path="haxe.Function"/>
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "removeListener"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -4736,13 +4736,13 @@
 		<to><icast><x path="js.node.events.Event"><c path="js.node.fs.WriteStreamEvent.T"/></x></icast></to>
 		<meta><m n=":enum"/></meta>
 		<impl><class path="js.node.fs._WriteStream.WriteStreamEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/fs/WriteStream.hx" private="1" module="js.node.fs.WriteStream" extern="1">
-	<Open public="1" get="inline" set="null" expr="&apos;???&apos;" line="33" static="1">
+	<Open public="1" get="inline" set="null" expr="cast &quot;open&quot;" line="33" static="1">
 		<x path="js.node.fs.WriteStreamEvent"><f a="">
 	<x path="Int"/>
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "open"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -4755,13 +4755,13 @@
 </class></impl>
 	</abstract>
 	<class path="js.node.fs._WriteStream.WriteStreamEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/fs/WriteStream.hx" private="1" module="js.node.fs.WriteStream" extern="1">
-		<Open public="1" get="inline" set="null" expr="&apos;???&apos;" line="33" static="1">
+		<Open public="1" get="inline" set="null" expr="cast &quot;open&quot;" line="33" static="1">
 			<x path="js.node.fs.WriteStreamEvent"><f a="">
 	<x path="Int"/>
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "open"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -4784,66 +4784,66 @@
     http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html</haxe_doc>
 		<meta><m n=":enum"/></meta>
 		<impl><class path="js.node.http._Method.Method_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/http/Method.hx" private="1" module="js.node.http.Method" extern="1">
-	<Get public="1" get="inline" set="null" expr="&apos;???&apos;" line="29" static="1">
+	<Get public="1" get="inline" set="null" expr="cast &quot;GET&quot;" line="29" static="1">
 		<x path="js.node.http.Method"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "GET"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 	</Get>
-	<Post public="1" get="inline" set="null" expr="&apos;???&apos;" line="30" static="1">
+	<Post public="1" get="inline" set="null" expr="cast &quot;POST&quot;" line="30" static="1">
 		<x path="js.node.http.Method"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "POST"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 	</Post>
-	<Head public="1" get="inline" set="null" expr="&apos;???&apos;" line="31" static="1">
+	<Head public="1" get="inline" set="null" expr="cast &quot;HEAD&quot;" line="31" static="1">
 		<x path="js.node.http.Method"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "HEAD"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 	</Head>
-	<Options public="1" get="inline" set="null" expr="&apos;???&apos;" line="32" static="1">
+	<Options public="1" get="inline" set="null" expr="cast &quot;OPTIONS&quot;" line="32" static="1">
 		<x path="js.node.http.Method"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "OPTIONS"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 	</Options>
-	<Put public="1" get="inline" set="null" expr="&apos;???&apos;" line="33" static="1">
+	<Put public="1" get="inline" set="null" expr="cast &quot;PUT&quot;" line="33" static="1">
 		<x path="js.node.http.Method"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "PUT"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 	</Put>
-	<Delete public="1" get="inline" set="null" expr="&apos;???&apos;" line="34" static="1">
+	<Delete public="1" get="inline" set="null" expr="cast &quot;DELETE&quot;" line="34" static="1">
 		<x path="js.node.http.Method"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "DELETE"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 	</Delete>
-	<Trace public="1" get="inline" set="null" expr="&apos;???&apos;" line="35" static="1">
+	<Trace public="1" get="inline" set="null" expr="cast &quot;TRACE&quot;" line="35" static="1">
 		<x path="js.node.http.Method"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "TRACE"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 	</Trace>
-	<Connect public="1" get="inline" set="null" expr="&apos;???&apos;" line="36" static="1">
+	<Connect public="1" get="inline" set="null" expr="cast &quot;CONNECT&quot;" line="36" static="1">
 		<x path="js.node.http.Method"/>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "CONNECT"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -4852,66 +4852,66 @@
 </class></impl>
 	</abstract>
 	<class path="js.node.http._Method.Method_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/http/Method.hx" private="1" module="js.node.http.Method" extern="1">
-		<Get public="1" get="inline" set="null" expr="&apos;???&apos;" line="29" static="1">
+		<Get public="1" get="inline" set="null" expr="cast &quot;GET&quot;" line="29" static="1">
 			<x path="js.node.http.Method"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "GET"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 		</Get>
-		<Post public="1" get="inline" set="null" expr="&apos;???&apos;" line="30" static="1">
+		<Post public="1" get="inline" set="null" expr="cast &quot;POST&quot;" line="30" static="1">
 			<x path="js.node.http.Method"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "POST"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 		</Post>
-		<Head public="1" get="inline" set="null" expr="&apos;???&apos;" line="31" static="1">
+		<Head public="1" get="inline" set="null" expr="cast &quot;HEAD&quot;" line="31" static="1">
 			<x path="js.node.http.Method"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "HEAD"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 		</Head>
-		<Options public="1" get="inline" set="null" expr="&apos;???&apos;" line="32" static="1">
+		<Options public="1" get="inline" set="null" expr="cast &quot;OPTIONS&quot;" line="32" static="1">
 			<x path="js.node.http.Method"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "OPTIONS"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 		</Options>
-		<Put public="1" get="inline" set="null" expr="&apos;???&apos;" line="33" static="1">
+		<Put public="1" get="inline" set="null" expr="cast &quot;PUT&quot;" line="33" static="1">
 			<x path="js.node.http.Method"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "PUT"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 		</Put>
-		<Delete public="1" get="inline" set="null" expr="&apos;???&apos;" line="34" static="1">
+		<Delete public="1" get="inline" set="null" expr="cast &quot;DELETE&quot;" line="34" static="1">
 			<x path="js.node.http.Method"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "DELETE"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 		</Delete>
-		<Trace public="1" get="inline" set="null" expr="&apos;???&apos;" line="35" static="1">
+		<Trace public="1" get="inline" set="null" expr="cast &quot;TRACE&quot;" line="35" static="1">
 			<x path="js.node.http.Method"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "TRACE"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 		</Trace>
-		<Connect public="1" get="inline" set="null" expr="&apos;???&apos;" line="36" static="1">
+		<Connect public="1" get="inline" set="null" expr="cast &quot;CONNECT&quot;" line="36" static="1">
 			<x path="js.node.http.Method"/>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "CONNECT"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -4924,19 +4924,19 @@
 		<haxe_doc>Enumeration of events emitted by the `ServerResponse` objects in addition to its parent class events.</haxe_doc>
 		<meta><m n=":enum"/></meta>
 		<impl><class path="js.node.http._ServerResponse.ServerResponseEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/http/ServerResponse.hx" private="1" module="js.node.http.ServerResponse" extern="1">
-	<Close public="1" get="inline" set="null" expr="&apos;???&apos;" line="36" static="1">
+	<Close public="1" get="inline" set="null" expr="cast &quot;close&quot;" line="36" static="1">
 		<x path="js.node.http.ServerResponseEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "close"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 		<haxe_doc>Indicates that the underlying connection was terminated before `end` was called or able to flush.</haxe_doc>
 	</Close>
-	<Finish public="1" get="inline" set="null" expr="&apos;???&apos;" line="45" static="1">
+	<Finish public="1" get="inline" set="null" expr="cast &quot;finish&quot;" line="45" static="1">
 		<x path="js.node.http.ServerResponseEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "finish"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -4950,19 +4950,19 @@
 </class></impl>
 	</abstract>
 	<class path="js.node.http._ServerResponse.ServerResponseEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/http/ServerResponse.hx" private="1" module="js.node.http.ServerResponse" extern="1">
-		<Close public="1" get="inline" set="null" expr="&apos;???&apos;" line="36" static="1">
+		<Close public="1" get="inline" set="null" expr="cast &quot;close&quot;" line="36" static="1">
 			<x path="js.node.http.ServerResponseEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "close"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 			<haxe_doc>Indicates that the underlying connection was terminated before `end` was called or able to flush.</haxe_doc>
 		</Close>
-		<Finish public="1" get="inline" set="null" expr="&apos;???&apos;" line="45" static="1">
+		<Finish public="1" get="inline" set="null" expr="cast &quot;finish&quot;" line="45" static="1">
 			<x path="js.node.http.ServerResponseEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "finish"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -4980,7 +4980,7 @@
 		<haxe_doc>Enumeration of events for `Socket` objects.</haxe_doc>
 		<meta><m n=":enum"/></meta>
 		<impl><class path="js.node.net._Socket.SocketEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/net/Socket.hx" private="1" module="js.node.net.Socket" extern="1">
-	<Lookup public="1" get="inline" set="null" expr="&apos;???&apos;" line="35" static="1">
+	<Lookup public="1" get="inline" set="null" expr="cast &quot;lookup&quot;" line="35" static="1">
 		<x path="js.node.net.SocketEvent"><f a="::">
 	<t path="Null"><c path="js.Error"/></t>
 	<c path="String"/>
@@ -4988,23 +4988,23 @@
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "lookup"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 		<haxe_doc>Emitted after resolving the hostname but before connecting.
 		Not applicable to UNIX sockets.</haxe_doc>
 	</Lookup>
-	<Connect public="1" get="inline" set="null" expr="&apos;???&apos;" line="40" static="1">
+	<Connect public="1" get="inline" set="null" expr="cast &quot;connect&quot;" line="40" static="1">
 		<x path="js.node.net.SocketEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "connect"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 		<haxe_doc>Emitted when a socket connection is successfully established. See `Socket.connect`.</haxe_doc>
 	</Connect>
-	<Data public="1" get="inline" set="null" expr="&apos;???&apos;" line="49" static="1">
+	<Data public="1" get="inline" set="null" expr="cast &quot;data&quot;" line="49" static="1">
 		<x path="js.node.net.SocketEvent"><f a="">
 	<x path="haxe.extern.EitherType">
 		<t path="js.node.Buffer"/>
@@ -5013,7 +5013,7 @@
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "data"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5023,10 +5023,10 @@
 
 		Note that the data will be lost if there is no listener when a Socket emits a 'data' event.</haxe_doc>
 	</Data>
-	<End public="1" get="inline" set="null" expr="&apos;???&apos;" line="59" static="1">
+	<End public="1" get="inline" set="null" expr="cast &quot;end&quot;" line="59" static="1">
 		<x path="js.node.net.SocketEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "end"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5037,10 +5037,10 @@
 		the socket will not automatically `end` its side allowing the user to write arbitrary amounts of data,
 		with the caveat that the user is required to `end` their side now.</haxe_doc>
 	</End>
-	<Timeout public="1" get="inline" set="null" expr="&apos;???&apos;" line="67" static="1">
+	<Timeout public="1" get="inline" set="null" expr="cast &quot;timeout&quot;" line="67" static="1">
 		<x path="js.node.net.SocketEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "timeout"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5049,35 +5049,35 @@
 		The user must manually close the connection.
 		See also: `Socket.setTimeout`</haxe_doc>
 	</Timeout>
-	<Drain public="1" get="inline" set="null" expr="&apos;???&apos;" line="73" static="1">
+	<Drain public="1" get="inline" set="null" expr="cast &quot;drain&quot;" line="73" static="1">
 		<x path="js.node.net.SocketEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "drain"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 		<haxe_doc>Emitted when the write buffer becomes empty. Can be used to throttle uploads.
 		See also: the return values of `Socket.write`</haxe_doc>
 	</Drain>
-	<Error public="1" get="inline" set="null" expr="&apos;???&apos;" line="78" static="1">
+	<Error public="1" get="inline" set="null" expr="cast &quot;error&quot;" line="78" static="1">
 		<x path="js.node.net.SocketEvent"><f a="">
 	<c path="js.Error"/>
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "error"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 		<haxe_doc>Emitted when an error occurs. The 'close' event will be called directly following this event.</haxe_doc>
 	</Error>
-	<Close public="1" get="inline" set="null" expr="&apos;???&apos;" line="87" static="1">
+	<Close public="1" get="inline" set="null" expr="cast &quot;close&quot;" line="87" static="1">
 		<x path="js.node.net.SocketEvent"><f a="">
 	<x path="Bool"/>
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "close"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5091,7 +5091,7 @@
 </class></impl>
 	</abstract>
 	<class path="js.node.net._Socket.SocketEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/net/Socket.hx" private="1" module="js.node.net.Socket" extern="1">
-		<Lookup public="1" get="inline" set="null" expr="&apos;???&apos;" line="35" static="1">
+		<Lookup public="1" get="inline" set="null" expr="cast &quot;lookup&quot;" line="35" static="1">
 			<x path="js.node.net.SocketEvent"><f a="::">
 	<t path="Null"><c path="js.Error"/></t>
 	<c path="String"/>
@@ -5099,23 +5099,23 @@
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "lookup"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 			<haxe_doc>Emitted after resolving the hostname but before connecting.
 		Not applicable to UNIX sockets.</haxe_doc>
 		</Lookup>
-		<Connect public="1" get="inline" set="null" expr="&apos;???&apos;" line="40" static="1">
+		<Connect public="1" get="inline" set="null" expr="cast &quot;connect&quot;" line="40" static="1">
 			<x path="js.node.net.SocketEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "connect"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 			<haxe_doc>Emitted when a socket connection is successfully established. See `Socket.connect`.</haxe_doc>
 		</Connect>
-		<Data public="1" get="inline" set="null" expr="&apos;???&apos;" line="49" static="1">
+		<Data public="1" get="inline" set="null" expr="cast &quot;data&quot;" line="49" static="1">
 			<x path="js.node.net.SocketEvent"><f a="">
 	<x path="haxe.extern.EitherType">
 		<t path="js.node.Buffer"/>
@@ -5124,7 +5124,7 @@
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "data"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5134,10 +5134,10 @@
 
 		Note that the data will be lost if there is no listener when a Socket emits a 'data' event.</haxe_doc>
 		</Data>
-		<End public="1" get="inline" set="null" expr="&apos;???&apos;" line="59" static="1">
+		<End public="1" get="inline" set="null" expr="cast &quot;end&quot;" line="59" static="1">
 			<x path="js.node.net.SocketEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "end"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5148,10 +5148,10 @@
 		the socket will not automatically `end` its side allowing the user to write arbitrary amounts of data,
 		with the caveat that the user is required to `end` their side now.</haxe_doc>
 		</End>
-		<Timeout public="1" get="inline" set="null" expr="&apos;???&apos;" line="67" static="1">
+		<Timeout public="1" get="inline" set="null" expr="cast &quot;timeout&quot;" line="67" static="1">
 			<x path="js.node.net.SocketEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "timeout"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5160,35 +5160,35 @@
 		The user must manually close the connection.
 		See also: `Socket.setTimeout`</haxe_doc>
 		</Timeout>
-		<Drain public="1" get="inline" set="null" expr="&apos;???&apos;" line="73" static="1">
+		<Drain public="1" get="inline" set="null" expr="cast &quot;drain&quot;" line="73" static="1">
 			<x path="js.node.net.SocketEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "drain"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 			<haxe_doc>Emitted when the write buffer becomes empty. Can be used to throttle uploads.
 		See also: the return values of `Socket.write`</haxe_doc>
 		</Drain>
-		<Error public="1" get="inline" set="null" expr="&apos;???&apos;" line="78" static="1">
+		<Error public="1" get="inline" set="null" expr="cast &quot;error&quot;" line="78" static="1">
 			<x path="js.node.net.SocketEvent"><f a="">
 	<c path="js.Error"/>
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "error"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 			<haxe_doc>Emitted when an error occurs. The 'close' event will be called directly following this event.</haxe_doc>
 		</Error>
-		<Close public="1" get="inline" set="null" expr="&apos;???&apos;" line="87" static="1">
+		<Close public="1" get="inline" set="null" expr="cast &quot;close&quot;" line="87" static="1">
 			<x path="js.node.net.SocketEvent"><f a="">
 	<x path="Bool"/>
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "close"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5602,10 +5602,10 @@
 		<haxe_doc>Enumeration of events emitted by the `Readable` class.</haxe_doc>
 		<meta><m n=":enum"/></meta>
 		<impl><class path="js.node.stream._Readable.ReadableEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/stream/Readable.hx" private="1" module="js.node.stream.Readable" extern="1">
-	<Readable public="1" get="inline" set="null" expr="&apos;???&apos;" line="42" static="1">
+	<Readable public="1" get="inline" set="null" expr="cast &quot;readable&quot;" line="42" static="1">
 		<x path="js.node.stream.ReadableEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "readable"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5616,7 +5616,7 @@
 
 		Once the internal buffer is drained, a 'readable' event will fire again when more data is available.</haxe_doc>
 	</Readable>
-	<Data public="1" get="inline" set="null" expr="&apos;???&apos;" line="50" static="1">
+	<Data public="1" get="inline" set="null" expr="cast &quot;data&quot;" line="50" static="1">
 		<x path="js.node.stream.ReadableEvent"><f a="">
 	<x path="haxe.extern.EitherType">
 		<t path="js.node.Buffer"/>
@@ -5625,7 +5625,7 @@
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "data"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5634,10 +5634,10 @@
 
 		If you just want to get all the data out of the stream as fast as possible, this is the best way to do so.</haxe_doc>
 	</Data>
-	<End public="1" get="inline" set="null" expr="&apos;???&apos;" line="58" static="1">
+	<End public="1" get="inline" set="null" expr="cast &quot;end&quot;" line="58" static="1">
 		<x path="js.node.stream.ReadableEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "end"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5646,10 +5646,10 @@
 		Note that the 'end' event will not fire unless the data is completely consumed.
 		This can be done by switching into flowing mode, or by calling 'read' repeatedly until you get to the end.</haxe_doc>
 	</End>
-	<Close public="1" get="inline" set="null" expr="&apos;???&apos;" line="65" static="1">
+	<Close public="1" get="inline" set="null" expr="cast &quot;close&quot;" line="65" static="1">
 		<x path="js.node.stream.ReadableEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "close"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5657,13 +5657,13 @@
 
 		Not all streams will emit this.</haxe_doc>
 	</Close>
-	<Error public="1" get="inline" set="null" expr="&apos;???&apos;" line="70" static="1">
+	<Error public="1" get="inline" set="null" expr="cast &quot;error&quot;" line="70" static="1">
 		<x path="js.node.stream.ReadableEvent"><f a="">
 	<c path="js.Error"/>
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "error"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5673,10 +5673,10 @@
 </class></impl>
 	</abstract>
 	<class path="js.node.stream._Readable.ReadableEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/stream/Readable.hx" private="1" module="js.node.stream.Readable" extern="1">
-		<Readable public="1" get="inline" set="null" expr="&apos;???&apos;" line="42" static="1">
+		<Readable public="1" get="inline" set="null" expr="cast &quot;readable&quot;" line="42" static="1">
 			<x path="js.node.stream.ReadableEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "readable"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5687,7 +5687,7 @@
 
 		Once the internal buffer is drained, a 'readable' event will fire again when more data is available.</haxe_doc>
 		</Readable>
-		<Data public="1" get="inline" set="null" expr="&apos;???&apos;" line="50" static="1">
+		<Data public="1" get="inline" set="null" expr="cast &quot;data&quot;" line="50" static="1">
 			<x path="js.node.stream.ReadableEvent"><f a="">
 	<x path="haxe.extern.EitherType">
 		<t path="js.node.Buffer"/>
@@ -5696,7 +5696,7 @@
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "data"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5705,10 +5705,10 @@
 
 		If you just want to get all the data out of the stream as fast as possible, this is the best way to do so.</haxe_doc>
 		</Data>
-		<End public="1" get="inline" set="null" expr="&apos;???&apos;" line="58" static="1">
+		<End public="1" get="inline" set="null" expr="cast &quot;end&quot;" line="58" static="1">
 			<x path="js.node.stream.ReadableEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "end"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5717,10 +5717,10 @@
 		Note that the 'end' event will not fire unless the data is completely consumed.
 		This can be done by switching into flowing mode, or by calling 'read' repeatedly until you get to the end.</haxe_doc>
 		</End>
-		<Close public="1" get="inline" set="null" expr="&apos;???&apos;" line="65" static="1">
+		<Close public="1" get="inline" set="null" expr="cast &quot;close&quot;" line="65" static="1">
 			<x path="js.node.stream.ReadableEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "close"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5728,13 +5728,13 @@
 
 		Not all streams will emit this.</haxe_doc>
 		</Close>
-		<Error public="1" get="inline" set="null" expr="&apos;???&apos;" line="70" static="1">
+		<Error public="1" get="inline" set="null" expr="cast &quot;error&quot;" line="70" static="1">
 			<x path="js.node.stream.ReadableEvent"><f a="">
 	<c path="js.Error"/>
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "error"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5766,32 +5766,32 @@
 		<haxe_doc>Enumeration for `Writable` class events.</haxe_doc>
 		<meta><m n=":enum"/></meta>
 		<impl><class path="js.node.stream._Writable.WritableEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/stream/Writable.hx" private="1" module="js.node.stream.Writable" extern="1">
-	<Drain public="1" get="inline" set="null" expr="&apos;???&apos;" line="38" static="1">
+	<Drain public="1" get="inline" set="null" expr="cast &quot;drain&quot;" line="38" static="1">
 		<x path="js.node.stream.WritableEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "drain"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 		<haxe_doc>If a `writable.write(chunk)` call returns `false`, then the `drain` event will indicate
 		when it is appropriate to begin writing more data to the stream.</haxe_doc>
 	</Drain>
-	<Finish public="1" get="inline" set="null" expr="&apos;???&apos;" line="43" static="1">
+	<Finish public="1" get="inline" set="null" expr="cast &quot;finish&quot;" line="43" static="1">
 		<x path="js.node.stream.WritableEvent"><f a=""><x path="Void"/></f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "finish"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
 		<haxe_doc>When the `end()` method has been called, and all data has been flushed to the underlying system, this event is emitted.</haxe_doc>
 	</Finish>
-	<Pipe public="1" get="inline" set="null" expr="&apos;???&apos;" line="52" static="1">
+	<Pipe public="1" get="inline" set="null" expr="cast &quot;pipe&quot;" line="52" static="1">
 		<x path="js.node.stream.WritableEvent"><f a="">
 	<c path="js.node.stream.IReadable"/>
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "pipe"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5801,13 +5801,13 @@
 		This is emitted whenever the `pipe()` method is called on a readable stream,
 		adding `this` writable to its set of destinations.</haxe_doc>
 	</Pipe>
-	<Unpipe public="1" get="inline" set="null" expr="&apos;???&apos;" line="61" static="1">
+	<Unpipe public="1" get="inline" set="null" expr="cast &quot;unpipe&quot;" line="61" static="1">
 		<x path="js.node.stream.WritableEvent"><f a="">
 	<c path="js.node.stream.IReadable"/>
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "unpipe"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5817,13 +5817,13 @@
 		This is emitted whenever the `unpipe()` method is called on a readable stream,
 		removing `this` writable from its set of destinations.</haxe_doc>
 	</Unpipe>
-	<Error public="1" get="inline" set="null" expr="&apos;???&apos;" line="66" static="1">
+	<Error public="1" get="inline" set="null" expr="cast &quot;error&quot;" line="66" static="1">
 		<x path="js.node.stream.WritableEvent"><f a="">
 	<c path="js.Error"/>
 	<x path="Void"/>
 </f></x>
 		<meta>
-			<m n=":value"><e>'???'</e></m>
+			<m n=":value"><e>cast "error"</e></m>
 			<m n=":enum"/>
 			<m n=":impl"/>
 		</meta>
@@ -5833,32 +5833,32 @@
 </class></impl>
 	</abstract>
 	<class path="js.node.stream._Writable.WritableEvent_Impl_" params="" file="/Users/francoponticelli/projects/hxnodejs/js/node/stream/Writable.hx" private="1" module="js.node.stream.Writable" extern="1">
-		<Drain public="1" get="inline" set="null" expr="&apos;???&apos;" line="38" static="1">
+		<Drain public="1" get="inline" set="null" expr="cast &quot;drain&quot;" line="38" static="1">
 			<x path="js.node.stream.WritableEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "drain"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 			<haxe_doc>If a `writable.write(chunk)` call returns `false`, then the `drain` event will indicate
 		when it is appropriate to begin writing more data to the stream.</haxe_doc>
 		</Drain>
-		<Finish public="1" get="inline" set="null" expr="&apos;???&apos;" line="43" static="1">
+		<Finish public="1" get="inline" set="null" expr="cast &quot;finish&quot;" line="43" static="1">
 			<x path="js.node.stream.WritableEvent"><f a=""><x path="Void"/></f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "finish"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
 			<haxe_doc>When the `end()` method has been called, and all data has been flushed to the underlying system, this event is emitted.</haxe_doc>
 		</Finish>
-		<Pipe public="1" get="inline" set="null" expr="&apos;???&apos;" line="52" static="1">
+		<Pipe public="1" get="inline" set="null" expr="cast &quot;pipe&quot;" line="52" static="1">
 			<x path="js.node.stream.WritableEvent"><f a="">
 	<c path="js.node.stream.IReadable"/>
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "pipe"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5868,13 +5868,13 @@
 		This is emitted whenever the `pipe()` method is called on a readable stream,
 		adding `this` writable to its set of destinations.</haxe_doc>
 		</Pipe>
-		<Unpipe public="1" get="inline" set="null" expr="&apos;???&apos;" line="61" static="1">
+		<Unpipe public="1" get="inline" set="null" expr="cast &quot;unpipe&quot;" line="61" static="1">
 			<x path="js.node.stream.WritableEvent"><f a="">
 	<c path="js.node.stream.IReadable"/>
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "unpipe"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -5884,13 +5884,13 @@
 		This is emitted whenever the `unpipe()` method is called on a readable stream,
 		removing `this` writable from its set of destinations.</haxe_doc>
 		</Unpipe>
-		<Error public="1" get="inline" set="null" expr="&apos;???&apos;" line="66" static="1">
+		<Error public="1" get="inline" set="null" expr="cast &quot;error&quot;" line="66" static="1">
 			<x path="js.node.stream.WritableEvent"><f a="">
 	<c path="js.Error"/>
 	<x path="Void"/>
 </f></x>
 			<meta>
-				<m n=":value"><e>'???'</e></m>
+				<m n=":value"><e>cast "error"</e></m>
 				<m n=":enum"/>
 				<m n=":impl"/>
 			</meta>
@@ -6059,6 +6059,13 @@
 	<x path="Void"/>
 </f></new>
 		<meta><m n=":jsRequire"><e>"express-brute"</e></m></meta>
+	</class>
+	<class path="mw.ExpressForceSSL" params="" file="src/mw/ExpressForceSSL.hx" extern="1">
+		<instance public="1" set="null" static="1">
+			<x path="express.Middleware"/>
+			<meta><m n=":selfCall"/></meta>
+		</instance>
+		<meta><m n=":jsRequire"><e>"express-force-ssl"</e></m></meta>
 	</class>
 	<class path="mw.FavIcon" params="" file="src/mw/Favicon.hx" module="mw.Favicon" extern="1">
 		<create public="1" set="method" static="1">
