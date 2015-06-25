@@ -158,7 +158,7 @@
 
 		The result will include the individual elements' String representations
 		separated by comma. The enclosing [ ] may be missing on some platforms,
-		use Std.string() to get a String representation that is consistent
+		use `Std.string()` to get a String representation that is consistent
 		across platforms.</haxe_doc>
 		</toString>
 		<unshift public="1" set="method">
@@ -410,9 +410,9 @@
 	- `Date.fromTime()` with a given timestamp or
 	- `Date.fromString()` by parsing from a String.
 
-	There is some extra functions available in the `DateTools` class.
+	There are some extra functions available in the `DateTools` class.
 
-	In the context of haxe dates, a timestamp is defined as the number of
+	In the context of Haxe dates, a timestamp is defined as the number of
 	milliseconds elapsed since 1st January 1970.</haxe_doc>
 		<meta><m n=":coreApi"/></meta>
 	</class>
@@ -753,8 +753,8 @@
 
 		- class instance
 		- structure
-		- Class<T>
-		- Enum<T>
+		- `Class<T>`
+		- `Enum<T>`
 
 		Otherwise, including if `v` is null, the result is false.]]></haxe_doc>
 		</isObject>
@@ -851,7 +851,7 @@
 			</f>
 			<haxe_doc>Returns the character at position `index` of `this` String.
 
-		If `index` is negative or exceeds `this.length`, the empty String ""
+		If `index` is negative or exceeds `this.length`, the empty String `""`
 		is returned.</haxe_doc>
 		</charAt>
 		<indexOf public="1" set="method">
@@ -893,10 +893,10 @@
 			</f>
 			<haxe_doc>Splits `this` String at each occurence of `delimiter`.
 
-		If `this` String is the empty String "", the result is not consistent
+		If `this` String is the empty String `""`, the result is not consistent
 		across targets and may either be `[]` (on Js, Cpp) or `[""]`.
 
-		If `delimiter` is the empty String "", `this` String is split into an
+		If `delimiter` is the empty String `""`, `this` String is split into an
 		Array of `this.length` elements, where the elements correspond to the
 		characters of `this` String.
 
@@ -906,9 +906,9 @@
 		If `delimiter` is null, the result is unspecified.
 
 		Otherwise, `this` String is split into parts at each occurence of
-		`delimiter`. If `this` String starts (or ends) with [delimiter}, the
-		result Array contains a leading (or trailing) empty String "" element.
-		Two subsequent delimiters also result in an empty String "" element.</haxe_doc>
+		`delimiter`. If `this` String starts (or ends) with `delimiter`, the
+		result `Array` contains a leading (or trailing) empty String `""` element.
+		Two subsequent delimiters also result in an empty String `""` element.</haxe_doc>
 		</split>
 		<toString public="1" set="method">
 			<f a=""><c path="String"/></f>
@@ -930,7 +930,7 @@
 		`this.length`, `this.length` is used instead.
 
 		If the (possibly swapped) `startIndex` exceeds `this.length`, the empty
-		String "" is returned.</haxe_doc>
+		String `""` is returned.</haxe_doc>
 		</substring>
 		<charCodeAt public="1" get="inline" set="null" line="35">
 			<f a="index">
@@ -940,11 +940,11 @@
 			<meta><m n=":has_untyped"/></meta>
 			<haxe_doc>Returns the character code at position `index` of `this` String.
 
-		If `index` is negative or exceeds `this.length`, null is returned.
+		If `index` is negative or exceeds `this.length`, `null` is returned.
 
-		To obtain the character code of a single character, "x".code can be used
-		instead to inline the character code at compile time. Note that this
-		only works on String literals of length 1.</haxe_doc>
+		To obtain the character code of a single character, `"x".code` can be
+		used instead to inline the character code at compile time. Note that
+		this only works on String literals of length 1.</haxe_doc>
 		</charCodeAt>
 		<substr public="1" get="inline" set="null" line="39">
 			<f a="pos:?len">
@@ -976,13 +976,15 @@
 		</new>
 		<haxe_doc>The basic String class.
 
-	A haxe String is immutable, it is not possible to modify individual
+	A Haxe String is immutable, it is not possible to modify individual
 	characters. No method of this class changes the state of `this` String.
 
-	Strings can be constructed using the string literal syntax "string value".
+	Strings can be constructed using the String literal syntax `"string value"`.
 
-	String can be concatenated by using the + operator. If an operand is not a
-	String, it is passed through Std.string() first.</haxe_doc>
+	String can be concatenated by using the `+` operator. If an operand is not a
+	String, it is passed through `Std.string()` first.
+	
+	@see http://haxe.org/manual/std-String.html</haxe_doc>
 		<meta><m n=":coreApi"/></meta>
 	</class>
 	<class path="Std" params="" file="/usr/local/lib/haxe/std/js/_std/Std.hx">
@@ -1515,7 +1517,7 @@
 			<haxe_doc>Returns a list of all constructors of enum `e` that require no
 		arguments.
 
-		This may return the empty Array [] if all constructors of `e` require
+		This may return the empty Array `[]` if all constructors of `e` require
 		arguments.
 
 		Otherwise an instance of `e` constructed through each of its non-
@@ -3532,7 +3534,7 @@
 			<haxe_doc>Returns a list of all constructors of enum `e` that require no
 		arguments.
 
-		This may return the empty Array [] if all constructors of `e` require
+		This may return the empty Array `[]` if all constructors of `e` require
 		arguments.
 
 		Otherwise an instance of `e` constructed through each of its non-
@@ -5930,7 +5932,7 @@
 	<x path="express.Middleware"/>
 </f></text>
 		<urlencoded public="1" set="method" static="1"><f a="?options">
-	<t path="mw.bodyparser.RawOptions"/>
+	<t path="mw.bodyparser.UrlEncodedOptions"/>
 	<x path="express.Middleware"/>
 </f></urlencoded>
 		<meta><m n=":jsRequire"><e>"body-parser"</e></m></meta>
@@ -6341,6 +6343,44 @@
 		<t path="Null"><c path="String"/></t>
 		<meta><m n=":optional"/></meta>
 	</defaultCharset>
+</a></typedef>
+	<typedef path="mw.bodyparser.UrlEncodedOptions" params="" file="src/mw/bodyparser/UrlEncodedOptions.hx"><a>
+	<verify>
+		<t path="Null"><f a=":::">
+	<c path="express.Request"/>
+	<c path="express.Response"/>
+	<t path="js.node.Buffer"/>
+	<c path="String"/>
+	<x path="Void"/>
+</f></t>
+		<meta><m n=":optional"/></meta>
+	</verify>
+	<type>
+		<t path="Null"><x path="haxe.extern.EitherType">
+	<c path="String"/>
+	<f a="">
+		<c path="express.Request"/>
+		<x path="Bool"/>
+	</f>
+</x></t>
+		<meta><m n=":optional"/></meta>
+	</type>
+	<parameterLimit>
+		<t path="Null"><x path="Int"/></t>
+		<meta><m n=":optional"/></meta>
+	</parameterLimit>
+	<limit>
+		<t path="Null"><x path="haxe.extern.EitherType">
+	<c path="String"/>
+	<x path="Int"/>
+</x></t>
+		<meta><m n=":optional"/></meta>
+	</limit>
+	<inflate>
+		<t path="Null"><x path="Bool"/></t>
+		<meta><m n=":optional"/></meta>
+	</inflate>
+	<extended><x path="Bool"/></extended>
 </a></typedef>
 	<typedef path="mw.busboy.Options" params="" file="src/mw/busboy/Options.hx"><a>
 	<limits>
