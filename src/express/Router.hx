@@ -9,11 +9,10 @@ extern class Router extends Route {
   function param(?name : String, callback : Request -> Response -> Next -> String -> Void) : Void;
   function path() : String;
 
-  @:overload(function(callback : Middleware) : Router {})
-  @:overload(function(callback : ErrorMiddleware) : Router {})
+  @:overload(function(callback : EitherMiddleware) : Router {})
   @:overload(function(router : Router) : Router {})
   @:overload(function(path : String, router : Router) : Router {})
-  function use(path : String, callback : Middleware, callbacks : Rest<Middleware>) : Router;
+  function use(path : String, callback : EitherMiddleware, callbacks : Rest<Middleware>) : Router;
 }
 
 typedef RouterOptions = {

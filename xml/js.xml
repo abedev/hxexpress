@@ -1700,7 +1700,7 @@
 	</class>
 	<class path="express.Express" params="" file="src/express/Express.hx" extern="1">
 		<extends path="express.Route"/>
-		<serveStatic public="1" get="inline" set="null" line="38" static="1">
+		<serveStatic public="1" get="inline" set="null" line="37" static="1">
 			<f a="root:?options">
 				<c path="String"/>
 				<t path="express.StaticOptions"/>
@@ -1807,17 +1807,13 @@
 		<use public="1" set="method">
 			<f a="path:callback:callbacks">
 				<c path="String"/>
-				<x path="express.Middleware"/>
+				<t path="express.EitherMiddleware"/>
 				<x path="haxe.extern.Rest"><x path="express.Middleware"/></x>
 				<c path="express.Express"/>
 			</f>
 			<overloads>
 				<use public="1" set="method"><f a="callback">
-	<x path="express.Middleware"/>
-	<c path="express.Express"/>
-</f></use>
-				<use public="1" set="method"><f a="callback">
-	<x path="express.ErrorMiddleware"/>
+	<t path="express.EitherMiddleware"/>
 	<c path="express.Express"/>
 </f></use>
 				<use public="1" set="method"><f a="app">
@@ -1852,7 +1848,7 @@
 		<to><icast><c path="String"/></icast></to>
 		<meta><m n=":enum"/></meta>
 		<impl><class path="express._Express.ExpressEvent_Impl_" params="" file="src/express/Express.hx" private="1" module="express.Express" extern="1">
-	<mount public="1" get="inline" set="null" expr="cast &quot;mount&quot;" line="44" static="1">
+	<mount public="1" get="inline" set="null" expr="cast &quot;mount&quot;" line="43" static="1">
 		<x path="express.ExpressEvent"/>
 		<meta>
 			<m n=":value"><e>cast "mount"</e></m>
@@ -1864,7 +1860,7 @@
 </class></impl>
 	</abstract>
 	<class path="express._Express.ExpressEvent_Impl_" params="" file="src/express/Express.hx" private="1" module="express.Express" extern="1">
-		<mount public="1" get="inline" set="null" expr="cast &quot;mount&quot;" line="44" static="1">
+		<mount public="1" get="inline" set="null" expr="cast &quot;mount&quot;" line="43" static="1">
 			<x path="express.ExpressEvent"/>
 			<meta>
 				<m n=":value"><e>cast "mount"</e></m>
@@ -1924,6 +1920,10 @@
 		<impl><class path="express._Middleware.ErrorMiddleware_Impl_" params="" file="src/express/Middleware.hx" private="1" module="express.Middleware" extern="1"/></impl>
 	</abstract>
 	<class path="express._Middleware.ErrorMiddleware_Impl_" params="" file="src/express/Middleware.hx" private="1" module="express.Middleware" extern="1"/>
+	<typedef path="express.EitherMiddleware" params="" file="src/express/Middleware.hx" module="express.Middleware"><x path="haxe.extern.EitherType">
+	<x path="express.Middleware"/>
+	<x path="express.ErrorMiddleware"/>
+</x></typedef>
 	<typedef path="express.FNext" params="" file="src/express/Next.hx" module="express.Next"><f a=""><x path="Void"/></f></typedef>
 	<typedef path="express.FNextRoute" params="" file="src/express/Next.hx" module="express.Next"><f a="">
 	<c path="String"/>
@@ -3108,17 +3108,13 @@
 		<use public="1" set="method">
 			<f a="path:callback:callbacks">
 				<c path="String"/>
-				<x path="express.Middleware"/>
+				<t path="express.EitherMiddleware"/>
 				<x path="haxe.extern.Rest"><x path="express.Middleware"/></x>
 				<c path="express.Router"/>
 			</f>
 			<overloads>
 				<use public="1" set="method"><f a="callback">
-	<x path="express.Middleware"/>
-	<c path="express.Router"/>
-</f></use>
-				<use public="1" set="method"><f a="callback">
-	<x path="express.ErrorMiddleware"/>
+	<t path="express.EitherMiddleware"/>
 	<c path="express.Router"/>
 </f></use>
 				<use public="1" set="method"><f a="router">
