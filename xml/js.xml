@@ -1545,6 +1545,7 @@
 	<class path="express.Error" params="" file="src/express/Error.hx" extern="1">
 		<extends path="js.Error"/>
 		<status public="1"><x path="Int"/></status>
+		<meta><m n=":native"><e>"Error"</e></m></meta>
 	</class>
 	<class path="express.Route" params="" file="src/express/Route.hx" extern="1">
 		<all public="1" set="method"><f a="path:callback:callbacks">
