@@ -7,6 +7,8 @@
 -lib hxnodejs
 -xml xml/js.xml
 -js _
+mw.BasicAuth
+mw.BearerTokenAuth
 mw.BodyParser
 mw.Busboy
 mw.Compression
@@ -19,6 +21,7 @@ mw.Favicon
 mw.Jwt
 mw.Morgan
 mw.Passport
+mw.SSLOnly
 mw.Slash
 mw.Uncapitalize
 mw.Unless
