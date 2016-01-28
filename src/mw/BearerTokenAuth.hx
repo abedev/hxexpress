@@ -45,7 +45,8 @@ class BearerTokenAuth {
 
       authenticator(token, req, function(err) {
         if (err != null) {
-          send403(res, 'Failed to authenticate Bearer token');
+          var message = err.message != null ? err.message : 'Failed to authenticate Bearer token';
+          send403(res, message);
           return;
         }
         next.call();

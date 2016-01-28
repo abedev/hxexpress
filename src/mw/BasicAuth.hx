@@ -64,7 +64,8 @@ class BasicAuth {
       var password = authParts[1];
       authenticator(username, password, req, function(err) {
         if (err != null) {
-          send403(res, 'Failed to authenticate Basic credentials');
+          var message = err.message != null ? err.message : 'Failed to authenticate Basic credentials';
+          send403(res, message);
           return;
         }
         next.call();
