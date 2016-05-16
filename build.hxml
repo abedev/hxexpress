@@ -20,6 +20,7 @@ mw.ExpressForceSSL
 mw.Favicon
 mw.Jwt
 mw.Morgan
+mw.OnFinished
 mw.Passport
 mw.SSLOnly
 mw.Slash
