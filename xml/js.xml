@@ -423,7 +423,7 @@
 	</class>
 	<class path="EReg" params="" file="/usr/local/lib/haxe/std/js/_std/EReg.hx">
 		<r><c path="_EReg.HaxeRegExp"/></r>
-		<match public="1" set="method" line="31">
+		<match public="1" set="method" line="30">
 			<f a="s">
 				<c path="String"/>
 				<x path="Bool"/>
@@ -434,7 +434,7 @@
 
 		If `s` is `null`, the result is unspecified.</haxe_doc>
 		</match>
-		<matched public="1" set="method" line="38">
+		<matched public="1" set="method" line="37">
 			<f a="n">
 				<x path="Int"/>
 				<c path="String"/>
@@ -449,7 +449,7 @@
 
 		If `n` equals 0, the whole matched substring is returned.</haxe_doc>
 		</matched>
-		<matchedLeft public="1" set="method" line="42">
+		<matchedLeft public="1" set="method" line="41">
 			<f a=""><c path="String"/></f>
 			<haxe_doc>Returns the part to the left of the last matched substring.
 
@@ -461,7 +461,7 @@
 
 		The result does not include the matched part.</haxe_doc>
 		</matchedLeft>
-		<matchedRight public="1" set="method" line="47">
+		<matchedRight public="1" set="method" line="46">
 			<f a=""><c path="String"/></f>
 			<haxe_doc>Returns the part to the right of the last matched substring.
 
@@ -473,7 +473,7 @@
 
 		The result does not include the matched part.</haxe_doc>
 		</matchedRight>
-		<matchedPos public="1" set="method" line="53">
+		<matchedPos public="1" set="method" line="52">
 			<f a=""><a>
 	<pos><x path="Int"/></pos>
 	<len><x path="Int"/></len>
@@ -488,7 +488,7 @@
 		If the global g modifier was in place for the matching, the position and
 		length of the leftmost substring is returned.</haxe_doc>
 		</matchedPos>
-		<matchSub public="1" set="method" line="58">
+		<matchSub public="1" set="method" line="57">
 			<f a="s:pos:?len" v="::-1">
 				<c path="String"/>
 				<x path="Int"/>
@@ -506,7 +506,7 @@
 
 		If `s` is null, the result is unspecified.</haxe_doc>
 		</matchSub>
-		<split public="1" set="method" line="78">
+		<split public="1" set="method" line="77">
 			<f a="s">
 				<c path="String"/>
 				<c path="Array"><c path="String"/></c>
@@ -529,7 +529,7 @@
 
 		If `s` is null, the result is unspecified.</haxe_doc>
 		</split>
-		<replace public="1" set="method" line="84">
+		<replace public="1" get="inline" set="null" line="83">
 			<f a="s:by">
 				<c path="String"/>
 				<c path="String"/>
@@ -549,7 +549,7 @@
 
 		If `s` or `by` are null, the result is unspecified.</haxe_doc>
 		</replace>
-		<map public="1" set="method" line="88">
+		<map public="1" set="method" line="87">
 			<f a="s:f">
 				<c path="String"/>
 				<f a="">
@@ -571,7 +571,7 @@
 
 		If `s` or `f` are null, the result is unspecified.</haxe_doc>
 		</map>
-		<new public="1" set="method" line="26">
+		<new public="1" get="inline" set="null" line="26">
 			<f a="r:opt">
 				<c path="String"/>
 				<c path="String"/>
@@ -1793,7 +1793,7 @@
 		<TUnknown/>
 	</enum>
 	<class path="Type" params="" file="/usr/local/lib/haxe/std/js/_std/Type.hx">
-		<getClass public="1" params="T" get="inline" set="null" line="36" static="1">
+		<getClass public="1" params="T" get="inline" set="null" line="37" static="1">
 			<f a="o">
 				<c path="getClass.T"/>
 				<x path="Class"><c path="getClass.T"/></x>
@@ -1804,7 +1804,7 @@
 
 		In general, type parameter information cannot be obtained at runtime.</haxe_doc>
 		</getClass>
-		<getEnum public="1" set="method" line="40" static="1">
+		<getEnum public="1" set="method" line="41" static="1">
 			<f a="o">
 				<x path="EnumValue"/>
 				<x path="Enum"><d/></x>
@@ -1819,7 +1819,7 @@
 
 		In general, type parameter information cannot be obtained at runtime.]]></haxe_doc>
 		</getEnum>
-		<getSuperClass public="1" set="method" line="46" static="1">
+		<getSuperClass public="1" set="method" line="47" static="1">
 			<f a="c">
 				<x path="Class"><d/></x>
 				<x path="Class"><d/></x>
@@ -1833,7 +1833,7 @@
 
 		In general, type parameter information cannot be obtained at runtime.</haxe_doc>
 		</getSuperClass>
-		<getClassName public="1" set="method" line="51" static="1">
+		<getClassName public="1" set="method" line="52" static="1">
 			<f a="c">
 				<x path="Class"><d/></x>
 				<c path="String"/>
@@ -1853,7 +1853,7 @@
 
 		The class name does not include any type parameters.</haxe_doc>
 		</getClassName>
-		<getEnumName public="1" set="method" line="58" static="1">
+		<getEnumName public="1" set="method" line="59" static="1">
 			<f a="e">
 				<x path="Enum"><d/></x>
 				<c path="String"/>
@@ -1873,7 +1873,7 @@
 
 		The enum name does not include any type parameters.</haxe_doc>
 		</getEnumName>
-		<resolveClass public="1" set="method" line="63" static="1">
+		<resolveClass public="1" set="method" line="64" static="1">
 			<f a="name">
 				<c path="String"/>
 				<x path="Class"><d/></x>
@@ -1890,7 +1890,7 @@
 
 		The class name must not include any type parameters.</haxe_doc>
 		</resolveClass>
-		<resolveEnum public="1" set="method" line="71" static="1">
+		<resolveEnum public="1" set="method" line="72" static="1">
 			<f a="name">
 				<c path="String"/>
 				<x path="Enum"><d/></x>
@@ -1908,7 +1908,7 @@
 
 		The enum name must not include any type parameters.</haxe_doc>
 		</resolveEnum>
-		<createInstance public="1" params="T" set="method" line="79" static="1">
+		<createInstance public="1" params="T" set="method" line="80" static="1">
 			<f a="cl:args">
 				<x path="Class"><c path="createInstance.T"/></x>
 				<c path="Array"><d/></c>
@@ -1931,7 +1931,7 @@
 		In particular, default values of constructor arguments are not
 		guaranteed to be taken into account.</haxe_doc>
 		</createInstance>
-		<createEmptyInstance public="1" params="T" set="method" line="116" static="1">
+		<createEmptyInstance public="1" params="T" set="method" line="117" static="1">
 			<f a="cl">
 				<x path="Class"><c path="createEmptyInstance.T"/></x>
 				<c path="createEmptyInstance.T"/>
@@ -1943,7 +1943,7 @@
 
 		If `cl` is null, the result is unspecified.</haxe_doc>
 		</createEmptyInstance>
-		<createEnum public="1" params="T" set="method" line="121" static="1">
+		<createEnum public="1" params="T" set="method" line="122" static="1">
 			<f a="e:constr:?params">
 				<x path="Enum"><c path="createEnum.T"/></x>
 				<c path="String"/>
@@ -1958,7 +1958,7 @@
 		expected number of constructor arguments, or if any argument has an
 		invalid type, the result is unspecified.</haxe_doc>
 		</createEnum>
-		<createEnumIndex public="1" params="T" set="method" line="133" static="1">
+		<createEnumIndex public="1" params="T" set="method" line="134" static="1">
 			<f a="e:index:?params">
 				<x path="Enum"><c path="createEnumIndex.T"/></x>
 				<x path="Int"/>
@@ -1977,7 +1977,7 @@
 		expected number of constructor arguments, or if any argument has an
 		invalid type, the result is unspecified.</haxe_doc>
 		</createEnumIndex>
-		<getInstanceFields public="1" set="method" line="139" static="1">
+		<getInstanceFields public="1" set="method" line="140" static="1">
 			<f a="c">
 				<x path="Class"><d/></x>
 				<c path="Array"><c path="String"/></c>
@@ -1995,7 +1995,7 @@
 
 		(As3) This method only returns instance fields that are public.</haxe_doc>
 		</getInstanceFields>
-		<getClassFields public="1" set="method" line="147" static="1">
+		<getClassFields public="1" set="method" line="148" static="1">
 			<f a="c">
 				<x path="Class"><d/></x>
 				<c path="Array"><c path="String"/></c>
@@ -2010,7 +2010,7 @@
 
 		(As3) This method only returns class fields that are public.</haxe_doc>
 		</getClassFields>
-		<getEnumConstructs public="1" get="inline" set="null" line="158" static="1">
+		<getEnumConstructs public="1" get="inline" set="null" line="159" static="1">
 			<f a="e">
 				<x path="Enum"><d/></x>
 				<c path="Array"><c path="String"/></c>
@@ -2022,7 +2022,7 @@
 
 		If `c` is null, the result is unspecified.</haxe_doc>
 		</getEnumConstructs>
-		<typeof public="1" set="method" line="162" static="1">
+		<typeof public="1" set="method" line="163" static="1">
 			<f a="v">
 				<d/>
 				<e path="ValueType"/>
@@ -2034,7 +2034,7 @@
 		per platform. Assumptions regarding this should be minimized to avoid
 		surprises.</haxe_doc>
 		</typeof>
-		<enumEq public="1" params="T" set="method" line="192" static="1">
+		<enumEq public="1" params="T" set="method" line="193" static="1">
 			<f a="a:b">
 				<c path="enumEq.T"/>
 				<c path="enumEq.T"/>
@@ -2048,7 +2048,7 @@
 
 		If `a` or `b` are null, the result is unspecified.</haxe_doc>
 		</enumEq>
-		<enumConstructor public="1" get="inline" set="null" line="210" static="1">
+		<enumConstructor public="1" get="inline" set="null" line="211" static="1">
 			<f a="e">
 				<x path="EnumValue"/>
 				<c path="String"/>
@@ -2060,7 +2060,7 @@
 
 		If `e` is null, the result is unspecified.</haxe_doc>
 		</enumConstructor>
-		<enumParameters public="1" get="inline" set="null" line="214" static="1">
+		<enumParameters public="1" get="inline" set="null" line="215" static="1">
 			<f a="e">
 				<x path="EnumValue"/>
 				<c path="Array"><d/></c>
@@ -2075,7 +2075,7 @@
 
 		If `e` is null, the result is unspecified.</haxe_doc>
 		</enumParameters>
-		<enumIndex public="1" get="inline" set="null" line="218" static="1">
+		<enumIndex public="1" get="inline" set="null" line="219" static="1">
 			<f a="e">
 				<x path="EnumValue"/>
 				<x path="Int"/>
@@ -2088,7 +2088,7 @@
 
 		If `e` is null, the result is unspecified.</haxe_doc>
 		</enumIndex>
-		<allEnums public="1" params="T" get="inline" set="null" line="222" static="1">
+		<allEnums public="1" params="T" get="inline" set="null" line="223" static="1">
 			<f a="e">
 				<x path="Enum"><c path="allEnums.T"/></x>
 				<c path="Array"><c path="allEnums.T"/></c>
@@ -6199,12 +6199,12 @@
 		<meta><m n=":native"><e>"URIError"</e></m></meta>
 	</class>
 	<class path="js.Lib" params="" file="/usr/local/lib/haxe/std/js/Lib.hx">
-		<debug public="1" get="inline" set="null" line="29" static="1">
+		<debug public="1" get="inline" set="null" line="33" static="1">
 			<f a=""><x path="Void"/></f>
 			<meta><m n=":has_untyped"/></meta>
 			<haxe_doc>Inserts a 'debugger' statement that will make a breakpoint if a debugger is available.</haxe_doc>
 		</debug>
-		<alert public="1" set="method" line="38" static="1">
+		<alert public="1" set="method" line="42" static="1">
 			<f a="v">
 				<d/>
 				<x path="Void"/>
@@ -6216,14 +6216,14 @@
 			<haxe_doc>Display an alert message box containing the given message.
 		@deprecated Use Browser.alert() instead.</haxe_doc>
 		</alert>
-		<eval public="1" get="inline" set="null" line="42" static="1">
+		<eval public="1" get="inline" set="null" line="46" static="1">
 			<f a="code">
 				<c path="String"/>
 				<d/>
 			</f>
 			<meta><m n=":has_untyped"/></meta>
 		</eval>
-		<require public="1" get="inline" set="null" line="53" static="1">
+		<require public="1" get="inline" set="null" line="57" static="1">
 			<f a="module">
 				<c path="String"/>
 				<d/>
@@ -6246,7 +6246,7 @@
 
 		In Haxe, `null` is used to represent the absence of a value.</haxe_doc>
 		</undefined>
-		<get_undefined get="inline" set="null" line="65" static="1">
+		<get_undefined get="inline" set="null" line="69" static="1">
 			<f a=""><d/></f>
 			<meta><m n=":has_untyped"/></meta>
 		</get_undefined>
@@ -6263,7 +6263,7 @@
 
 		Read more at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this</haxe_doc>
 		</nativeThis>
-		<get_nativeThis get="inline" set="null" line="82" static="1">
+		<get_nativeThis get="inline" set="null" line="86" static="1">
 			<f a=""><d/></f>
 			<meta>
 				<m n=":has_untyped"/>
@@ -6277,14 +6277,14 @@
 		Concretely, it is set as the first defined value in the list of
 		`window`, `global`, `self`, and `this` in the top-level of the compiled output.</haxe_doc>
 		</global>
-		<get_global get="inline" set="null" line="100" static="1">
+		<get_global get="inline" set="null" line="104" static="1">
 			<f a=""><d/></f>
 			<meta>
 				<m n=":has_untyped"/>
 				<m n=":extern"/>
 			</meta>
 		</get_global>
-		<rethrow public="1" get="inline" set="null" line="109" static="1">
+		<rethrow public="1" get="inline" set="null" line="113" static="1">
 			<f a=""><x path="Void"/></f>
 			<meta>
 				<m n=":has_untyped"/>
@@ -6294,6 +6294,8 @@
 
 		Calling this only makes sense inside a catch statement.</haxe_doc>
 		</rethrow>
+		<haxe_doc>Platform-specific JavaScript Library. Provides some platform-specific functions 
+	for the JavaScript target.</haxe_doc>
 	</class>
 	<class path="js.RegExpMatch" params="" file="/usr/local/lib/haxe/std/js/RegExp.hx" module="js.RegExp" extern="1">
 		<extends path="Array"><c path="String"/></extends>
@@ -9628,6 +9630,31 @@
 	<x path="Void"/>
 </f></token>
 		<meta><m n=":jsRequire"><e>"morgan"</e></m></meta>
+	</class>
+	<class path="mw.OnFinished" params="" file="src/mw/OnFinished.hx" extern="1">
+		<request public="1" set="method" static="1">
+			<f a="res:callback">
+				<c path="express.Response"/>
+				<f a=":">
+					<t path="Null"><c path="js.Error"/></t>
+					<c path="express.Response"/>
+					<x path="Void"/>
+				</f>
+				<x path="Void"/>
+			</f>
+			<meta>
+				<m n=":override"><e><![CDATA[function(req:Request, callback:Null<Error> -> Request):Void { }]]></e></m>
+				<m n=":selfCall"/>
+			</meta>
+		</request>
+		<isFinished public="1" set="method" static="1">
+			<f a="res">
+				<c path="express.Response"/>
+				<x path="Bool"/>
+			</f>
+			<meta><m n=":override"><e>function(req:Request):Bool { }</e></m></meta>
+		</isFinished>
+		<meta><m n=":jsRequire"><e>"on-finished"</e></m></meta>
 	</class>
 	<class path="mw.Passport" params="" file="src/mw/Passport.hx" extern="1">
 		<use public="1" set="method" static="1"><f a="?name:strategy">
