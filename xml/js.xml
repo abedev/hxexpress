@@ -9642,17 +9642,29 @@
 				</f>
 				<x path="Void"/>
 			</f>
-			<meta>
-				<m n=":override"><e><![CDATA[function(req:Request, callback:Null<Error> -> Request):Void { }]]></e></m>
-				<m n=":selfCall"/>
-			</meta>
+			<meta><m n=":selfCall"/></meta>
+			<overloads><listen public="1" set="method">
+	<f a="req:callback">
+		<c path="express.Request"/>
+		<f a=":">
+			<t path="Null"><c path="js.Error"/></t>
+			<c path="express.Request"/>
+			<x path="Void"/>
+		</f>
+		<x path="Void"/>
+	</f>
+	<meta><m n=":selfCall"/></meta>
+</listen></overloads>
 		</listen>
 		<isFinished public="1" set="method" static="1">
 			<f a="res">
 				<c path="express.Response"/>
 				<x path="Bool"/>
 			</f>
-			<meta><m n=":override"><e>function(req:Request):Bool { }</e></m></meta>
+			<overloads><isFinished public="1" set="method"><f a="req">
+	<c path="express.Request"/>
+	<x path="Bool"/>
+</f></isFinished></overloads>
 		</isFinished>
 		<meta><m n=":jsRequire"><e>"on-finished"</e></m></meta>
 	</class>
