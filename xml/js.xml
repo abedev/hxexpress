@@ -9632,7 +9632,7 @@
 		<meta><m n=":jsRequire"><e>"morgan"</e></m></meta>
 	</class>
 	<class path="mw.OnFinished" params="" file="src/mw/OnFinished.hx" extern="1">
-		<request public="1" set="method" static="1">
+		<listen public="1" set="method" static="1">
 			<f a="res:callback">
 				<c path="express.Response"/>
 				<f a=":">
@@ -9646,7 +9646,7 @@
 				<m n=":override"><e><![CDATA[function(req:Request, callback:Null<Error> -> Request):Void { }]]></e></m>
 				<m n=":selfCall"/>
 			</meta>
-		</request>
+		</listen>
 		<isFinished public="1" set="method" static="1">
 			<f a="res">
 				<c path="express.Response"/>
