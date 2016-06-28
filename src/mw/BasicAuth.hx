@@ -22,7 +22,7 @@ class BasicAuth {
         return;
       }
 
-      var authorizationHeader = req.headers["authorization"];
+      var authorizationHeader : String = req.headers.get(AUTHORIZATION);
       if (authorizationHeader == null || authorizationHeader.trim() == "") {
         send401(res, realm);
         return;
@@ -74,7 +74,7 @@ class BasicAuth {
   }
 
   static function send401(res : Response, realm : String) : Void {
-    res.setHeader('WWW-Authenticate', '$BASIC $REALM="$realm"');
+    res.setHeader(WWW_AUTHENTICATE, '$BASIC $REALM="$realm"');
     res.status(401).end();
   }
 
