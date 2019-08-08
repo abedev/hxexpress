@@ -12,7 +12,7 @@ abstract Next(Dynamic)
   public inline function call()
     untyped this();
 
-  public inline function error(err : js.Error)
+  public inline function error(err : js.lib.Error)
     untyped this(err);
 
   public inline function route()
