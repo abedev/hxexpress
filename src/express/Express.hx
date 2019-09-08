@@ -2,6 +2,7 @@ package express;
 
 import express.Middleware;
 import haxe.extern.Rest;
+import mw.bodyparser.JsonOptions;
 
 @:jsRequire("express")
 extern class Express extends Route {
@@ -34,6 +35,7 @@ extern class Express extends Route {
   @:overload(function(path : String, router : Router) : Express {})
   function use(path : String, callback : EitherMiddleware, callbacks : Rest<Middleware>) : Express;
 
+  static function json(?options : JsonOptions) : Middleware;
   inline static function serveStatic(root : String, ?options : StaticOptions) : Middleware
     return untyped Express["static"](root, options);
 }
