@@ -5,6 +5,7 @@ import haxe.extern.EitherType;
 typedef FMiddleware = Request -> Response -> Void;
 typedef FMiddlewareNext = Request -> Response -> Next -> Void;
 
+@:callable
 abstract Middleware(Dynamic)
   from FMiddleware to FMiddleware
   from FMiddlewareNext to FMiddlewareNext
@@ -13,6 +14,7 @@ abstract Middleware(Dynamic)
 typedef FErrorMiddleware = Error -> Request -> Response -> Void;
 typedef FErrorMiddlewareNext = Error -> Request -> Response -> Next -> Void;
 
+@:callable
 abstract ErrorMiddleware(Dynamic)
   from FErrorMiddleware to FErrorMiddleware
   from FErrorMiddlewareNext to FErrorMiddlewareNext
