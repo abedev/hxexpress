@@ -7,7 +7,7 @@ import haxe.extern.Rest;
 extern class Express extends Route {
   @:selfCall function new() : Void;
 
-  var locals(default, null) : {};
+  var locals : Dynamic;
   var mountpath(default, null) : Array<String>;
 
   function on(event : ExpressEvent, callback : Express -> Void) : Void;

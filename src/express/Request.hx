@@ -6,7 +6,7 @@ import haxe.extern.Rest;
 extern class Request extends js.node.http.IncomingMessage {
   var app : Express;
   var baseUrl : String;
-  var body : {};
+  var body : Dynamic;
 
   //var cookies : {}; // TODO requires middleware
 
@@ -15,10 +15,10 @@ extern class Request extends js.node.http.IncomingMessage {
   var ip : String;
   var ips : Array<String>;
   var originalUrl : String;
-  var params : {};
+  var params : Dynamic;
   var path : String;
   var protocol : String; // TODO needs abstract
-  var query : {};
+  var query : Dynamic;
   var route : String;
   var secure : Bool;
 

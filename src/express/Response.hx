@@ -3,7 +3,7 @@ package express;
 extern class Response extends js.node.http.ServerResponse {
   var app : Express;
   var headersSend : Bool;
-  var locals : {};
+  var locals : Dynamic;
 
   @:overload(function(field : String, values : Array<String>) : Void {})
   function append(field : String, value : String) : Response;
