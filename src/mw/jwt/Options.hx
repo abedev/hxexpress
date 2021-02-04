@@ -6,5 +6,6 @@ typedef Options = {
   ?userProperty : String,
   ?credentialsRequired : Bool,
   ?getToken : Request -> String,
-  ?secret : String
+  ?secret : String,
+  ?algorithms : Array<String>
 }
