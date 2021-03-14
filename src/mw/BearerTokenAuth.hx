@@ -17,7 +17,7 @@ class BearerTokenAuth {
         return;
       }
 
-      var authorizationHeader = req.headers[AUTHORIZATION];
+      var authorizationHeader:String = req.headers[AUTHORIZATION];
       if (authorizationHeader == null || authorizationHeader.trim() == "") {
         send401(res, '"$AUTHORIZATION header has no value');
         return;
