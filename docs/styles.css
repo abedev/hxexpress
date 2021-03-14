@@ -32,10 +32,6 @@
 #nav.searching .pack { display:inline; }
 #nav.searching .nav-list .nav-list { padding-left: 0; padding-right: 0; }
 
-.nav-header {
-	text-transform: none;
-}
-
 /* h1 code { padding:4px; font-size:15px; } */
 /* h3 code { padding:4px; font-size:13px; } */
 code {
