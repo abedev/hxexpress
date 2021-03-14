@@ -39,8 +39,15 @@ Defines whether the remaining lifetime of a counter should be based on the time 
 /*
 Gets called whenever an error occurs with the persistent store from which ExpressBrute cannot recover. It is passed an object containing the properties message (a description of the message), parent (the error raised by the session store), and [key, ip] or [req, res, next] depending on whether or the error occurs during reset or in the middleware itself.
 */
+#if (haxe_ver >= 4.0)
+  ?handleStoreError : EitherType<
+    ({ message : String, parent : js.lib.Error}, String, String) -> Void,
+    ({ message : String, parent : js.lib.Error}, Request, Response, Next) -> Void
+  >
+#else
   ?handleStoreError : EitherType<
     { message : String, parent : js.Error} -> String -> String -> Void,
     { message : String, parent : js.Error} -> Request -> Response -> Next -> Void
   >
+#end
 }

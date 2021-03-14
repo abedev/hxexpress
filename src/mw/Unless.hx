@@ -3,7 +3,11 @@ package mw;
 import express.Request;
 import express.Middleware;
 import haxe.extern.EitherType;
+#if (haxe_ver >= 4.0)
+import js.lib.RegExp;
+#else
 import js.RegExp;
+#end
 import mw.jwt.*;
 
 @:jsRequire("express-unless")
