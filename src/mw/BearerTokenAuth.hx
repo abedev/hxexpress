@@ -3,7 +3,11 @@ package mw;
 import express.Request;
 import express.Response;
 import express.Next;
+#if (haxe_ver >= 4.0)
+import js.lib.Error;
+#else
 import js.Error;
+#end
 using StringTools;
 
 class BearerTokenAuth {

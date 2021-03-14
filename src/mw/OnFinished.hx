@@ -2,7 +2,12 @@ package mw;
 
 import express.Request;
 import express.Response;
+
+#if (haxe_ver >= 4.0)
+import js.lib.Error;
+#else
 import js.Error;
+#end
 
 @:jsRequire("on-finished")
 extern class OnFinished {

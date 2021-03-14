@@ -2,7 +2,11 @@ package mw.cors;
 
 import express.Request;
 import haxe.extern.EitherType;
+#if (haxe_ver >= 4.0)
+import js.lib.Error;
+#else
 import js.Error;
+#end
 
 typedef Options = {
   ?origin : EitherType<Bool, EitherType<String, OriginFunction>>,

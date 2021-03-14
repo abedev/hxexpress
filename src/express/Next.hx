@@ -12,7 +12,7 @@ abstract Next(Dynamic)
   public inline function call()
     untyped this();
 
-  public inline function error(err : js.Error)
+  public inline function error(err : #if (haxe_ver >= 4.0) js.lib.Error #else js.Error #end)
     untyped this(err);
 
   public inline function route()

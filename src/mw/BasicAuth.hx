@@ -5,7 +5,11 @@ import haxe.crypto.Base64;
 import express.Request;
 import express.Response;
 import express.Next;
+#if (haxe_ver >= 4.0)
+import js.lib.Error;
+#else
 import js.Error;
+#end
 import js.node.Buffer;
 using StringTools;
 
